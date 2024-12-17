@@ -6,7 +6,7 @@ const zabbixUrl = "";
 const authToken = ""; // Buraya doğrudan tokeninizi ekleyin
 
 // JSON dosyasını yükleme
-const jsonData = JSON.parse(fs.readFileSync("./output.json", "utf8"));
+const jsonData = JSON.parse(fs.readFileSync("./itemHostGet.json", "utf8"));
 
 // Grup oluştur veya mevcut grup ID'sini al ve host'a ekle
 async function ensureGroupAndAddToHost(hostname, groupName) {
